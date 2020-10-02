@@ -13,6 +13,8 @@ $ stdin -> current register
 
 every other character is avoided including space and line break
 
-for it run:
+for it run you need python
+
+to run it:
 on cmd: hellcode.py script_name
 on mac / linux: ./hellcode.py script_name or python hellcode.py script_name
