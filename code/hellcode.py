@@ -26,7 +26,9 @@ def Alloc(scr):
 	if char == "]":
 		if rooms[ptr] == 256: rooms[ptr] = 0
 		else: rooms[ptr] += 1
-	if char == "#": ptr += 1
+	if char == "#": 
+		if ptr == 19: ptr = 0
+		else: ptr += 1
 	if char == "!":
 		if ptr == 0: ptr = 19
 		else: ptr -= 1
