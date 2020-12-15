@@ -32,5 +32,7 @@ $ stdin -> current register
 # 
 
 to run it you need python:
+
 on cmd: hellcode.py script_name
+
 on mac / linux: ./hellcode.py script_name or python hellcode.py script_name
