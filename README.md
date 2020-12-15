@@ -3,7 +3,7 @@ Enjoy wasting time with this Joke Language
 
 # How to use
 
-list of commands : 
+list of commands : \n
 [ decrease byte on current register
 ] increase byte on current register 
 \* set current register to 256
