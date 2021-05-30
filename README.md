@@ -8,3 +8,9 @@ run:
 ```shell
 go build HellCode.go
 ```
+
+# Using
+run:
+```shell
+HellCode [inputfile] [outputfile]
+```
