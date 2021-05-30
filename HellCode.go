@@ -29,14 +29,14 @@ func REG_DEC() {
 }
 
 func LOP_BEG() {
-	compiled += fmt.Sprintf("loop%v\n", lc)
+	compiled += fmt.Sprintf("loop%v:\n", lc)
 	compiled += "cmp byte [rsi], 0\n"
 	compiled += fmt.Sprintf("jz end%v\n", lc)
 	lc += 1
 }
 
 func LOP_END() {
-	compiled += fmt.Sprintf("end%v\n", lc - 1)
+	compiled += fmt.Sprintf("end%v:\n", lc - 1)
 }
 
 func ASCII_I() {
@@ -48,7 +48,7 @@ func ASCII_O() {
 }
 
 func Compile() {
-	compiled += ".section bss\nmem:resb 30000\n.section text\n"
+	compiled += "[bits 64]\n[section bss]\nmem:resb 30000\n[section text]\n"
 	if strings.Contains(program, ".") {
 		compiled += "print:\nxor rax, rax\ninc rax\nxor rdi, rdi\ninc rdi\nxor rdx, rdx\ninc rdx\nsyscall\nret\n"
 	}
