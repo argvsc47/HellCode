@@ -14,3 +14,7 @@ run:
 ```shell
 HellCode [inputfile] [outputfile]
 ```
+and to assemble it use:
+```shell
+nasm [outputfile]
+```
